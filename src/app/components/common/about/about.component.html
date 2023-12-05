@@ -1,0 +1,63 @@
+<div
+    class="about-area pt-100"
+    [ngClass]="{'pt-0': router.url === '/index-3'}"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="about-image">
+                    <img src="assets/img/about/about1.png" alt="about-image">
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                <div class="about-content">
+                    <span class="sub-title">ABOUT US</span>
+                    <h2>The great place of medical hospital center</h2>
+                    <ul class="list">
+                        <li>
+                            <span>
+                                <i class="flaticon-check-mark"></i>
+                                Instant Operation & Appointment
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="flaticon-check-mark"></i>
+                                100% Expert Doctors
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="flaticon-check-mark"></i>
+                                From Scintific Jornal
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="flaticon-check-mark"></i>
+                                Medicine & Instrument
+                            </span>
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam ut orci sit at viverra ut dui interdum. Faucibus faucibus orci id placerat eleifend.</p>
+                    <div class="ceo-info d-flex align-items-center">
+                        <div class="signature">
+                            <img src="assets/img/about/signature.png" alt="signature">
+                        </div>
+                        <div class="info d-flex align-items-center">
+                            <img src="assets/img/about/ceo.png" alt="ceo">
+                            <div class="title">
+                                <h4>Dr. Leonard Girardi</h4>
+                                <span>Founder & CEO</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a routerLink="/book-appointment" class="default-btn style-two">
+                        <i class="flaticon-calendar-1"></i>
+                        Request an Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
