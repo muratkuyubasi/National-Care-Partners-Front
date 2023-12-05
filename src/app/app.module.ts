@@ -58,6 +58,8 @@ import { BlogDetailsNoSidebarPageComponent } from './components/pages/blog-detai
 import { BlogCategoriesPageComponent } from './components/pages/blog-categories-page/blog-categories-page.component';
 import { BlogTagPageComponent } from './components/pages/blog-tag-page/blog-tag-page.component';
 import { BlogSearchResultPageComponent } from './components/pages/blog-search-result-page/blog-search-result-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -116,6 +118,9 @@ import { BlogSearchResultPageComponent } from './components/pages/blog-search-re
         BlogSearchResultPageComponent
     ],
     imports: [
+        HttpClientModule,
+        ReactiveFormsModule,
+        FormsModule,
         BrowserModule,
         AppRoutingModule,
         CarouselModule,

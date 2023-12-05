@@ -10,14 +10,14 @@
                 routerLink="/"
                 [ngClass]="{'d-none': router.url === '/index-3'}"
             >
-                <img src="assets/img/logo.png" alt="logo">
+                <img src="assets/img/logo/nc-logo.svg" alt="logo" style="width: 70%;">
             </a>
             <a
                 class="navbar-brand d-none"
                 routerLink="/"
                 [ngClass]="{'d-inline': router.url === '/index-3'}"
             >
-                <img src="assets/img/white-logo.png" alt="logo">
+                <img src="assets/img/logo/nc-logo.svg" alt="logo" style="width: 70%;">
             </a>
             <button class="navbar-toggler" type="button" (click)="toggleClass()">
                 <span class="burger-menu">
@@ -27,8 +27,23 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" style="margin: auto;">
                     <li class="nav-item">
+                        <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a routerLink="/doctors" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Our Team</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="/about" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link">Home</a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
@@ -41,8 +56,8 @@
                                 <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <!-- <li class="nav-item">
                         <a routerLink="/departments" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Departments</a>
                     </li>
                     <li class="nav-item">
@@ -167,10 +182,8 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a routerLink="/contact" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Contact Us</a>
-                    </li>
+                    </li> -->
+                    
                 </ul>
                 <ul class="navbar-nav for-responsive">
                     <li class="nav-item">
@@ -318,9 +331,9 @@
                     </li>
                 </ul>
                 <div class="others-option d-flex align-items-center">
-                    <div class="search-icon" (click)="searchToggleClass()">
+                    <!-- <div class="search-icon" (click)="searchToggleClass()">
                         <i class='flaticon-search-interface-symbol'></i>
-                    </div>
+                    </div> -->
                     <div>
                         <button type="button" (click)="switcherToggleClass()">
                             <span></span>

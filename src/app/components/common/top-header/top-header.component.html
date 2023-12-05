@@ -8,11 +8,11 @@
                 <ul class="top-header-contact-info">
                     <li>
                         <i class="flaticon-map-location"></i>
-                        2750 Quadra Street Victoria Road, New York, Canada
+                        {{addressModel?.value}}
                     </li>
                     <li>
                         <i class="flaticon-time-left"></i>
-                        Monday - Friday 08:00-19:00
+                        {{workinghoursModel?.value}}
                     </li>
                 </ul>
             </div>
@@ -20,21 +20,21 @@
                 <ul class="top-header-right-side">
                     <li>
                         <i class="flaticon-call"></i>
-                        <a href="tel:+1-485-456-0102">+1-485-456-0102</a>
+                        <a href="tel:+1-485-456-0102">{{phoneModel?.value}}</a>
                     </li>
                     <li>
                         <ul class="social">
                             <li>
-                                <a href="https://facebook.com/" target="_blank"><i class="flaticon-facebook-app-symbol"></i></a>
+                                <a href="{{facebookModel?.value}}" target="_blank"><i class="flaticon-facebook-app-symbol"></i></a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="https://www.linkedin.com/" target="_blank"><i class="flaticon-linkedin"></i></a>
+                            </li> -->
+                            <li>
+                                <a href="{{twitterModel?.value}}" target="_blank"><i class="flaticon-twitter"></i></a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank"><i class="flaticon-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/" target="_blank"><i class="flaticon-instagram"></i></a>
+                                <a href="{{instagramModel?.value}}" target="_blank"><i class="flaticon-instagram"></i></a>
                             </li>
                         </ul>
                     </li>

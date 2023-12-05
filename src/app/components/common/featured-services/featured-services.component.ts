@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { AnnouncementsService } from '../../services/announcements.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
     selector: 'app-featured-services',
@@ -7,10 +9,23 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
     styleUrls: ['./featured-services.component.scss']
 })
 export class FeaturedServicesComponent implements OnInit {
+	path = environment.serverUrl;
 
-    constructor() { }
+	ourServicesModel!:any;
+    constructor(
+		private announcementsservice:AnnouncementsService
+	) { }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+		this.newsList();
+	}
+
+	newsList(){
+		this.announcementsservice.getOurServicesList().subscribe((data: any)=> {
+		  this.ourServicesModel = data;
+		  console.log("Hizmetler",this.ourServicesModel)
+		})
+	  }
 
     servicesSlides: OwlOptions = {
 		margin: 25,

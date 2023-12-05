@@ -6,81 +6,22 @@
         </div>
         <div class="services-slides">
             <owl-carousel-o [options]="servicesSlides">
-                <ng-template carouselSlide>
+                <ng-template carouselSlide  *ngFor="let item of ourServicesModel">
                     <div class="single-services-item">
                         <a routerLink="/services-details" class="image d-block">
-                            <img src="assets/img/services/services1.jpg" alt="services-image">
+                            <img src="{{path}}/WebImages/Announcements/{{item.image}}" alt="blog-image">
                         </a>
                         <div class="content">
                             <div class="icon">
                                 <i class="flaticon-cosmetic-surgery"></i>
                             </div>
-                            <h3><a routerLink="/services-details">Plastic Surgery</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim malesuada lectus eget orci, ante sit sed diam. Tincidunt mattis aenean.</p>
-                            <a routerLink="/services-details" class="link-btn">Read More <i class="ph-caret-right"></i></a>
+                            <h3><a routerLink="/services-details">{{item.title}}</a></h3>
+                            <p [innerHTML]="item.detail"></p>
+                            <a routerLink="/services-details/{{item.id}}" class="link-btn">Read More <i class="ph-caret-right"></i></a>
                         </div>
                     </div>
                 </ng-template>
-                <ng-template carouselSlide>
-                    <div class="single-services-item">
-                        <a routerLink="/services-details" class="image d-block">
-                            <img src="assets/img/services/services2.jpg" alt="services-image">
-                        </a>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-fracture"></i>
-                            </div>
-                            <h3><a routerLink="/services-details">Orthopedic</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim malesuada lectus eget orci, ante sit sed diam. Tincidunt mattis aenean.</p>
-                            <a routerLink="/services-details" class="link-btn">Read More <i class="ph-caret-right"></i></a>
-                        </div>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                    <div class="single-services-item">
-                        <a routerLink="/services-details" class="image d-block">
-                            <img src="assets/img/services/services3.jpg" alt="services-image">
-                        </a>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-cosmetic-surgery"></i>
-                            </div>
-                            <h3><a routerLink="/services-details">Neurology</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim malesuada lectus eget orci, ante sit sed diam. Tincidunt mattis aenean.</p>
-                            <a routerLink="/services-details" class="link-btn">Read More <i class="ph-caret-right"></i></a>
-                        </div>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                    <div class="single-services-item">
-                        <a routerLink="/services-details" class="image d-block">
-                            <img src="assets/img/services/services4.jpg" alt="services-image">
-                        </a>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-scalpel"></i>
-                            </div>
-                            <h3><a routerLink="/services-details">Dermatology</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim malesuada lectus eget orci, ante sit sed diam. Tincidunt mattis aenean.</p>
-                            <a routerLink="/services-details" class="link-btn">Read More <i class="ph-caret-right"></i></a>
-                        </div>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide>
-                    <div class="single-services-item">
-                        <a routerLink="/services-details" class="image d-block">
-                            <img src="assets/img/services/services5.jpg" alt="services-image">
-                        </a>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-heartbeat"></i>
-                            </div>
-                            <h3><a routerLink="/services-details">Cardiology</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim malesuada lectus eget orci, ante sit sed diam. Tincidunt mattis aenean.</p>
-                            <a routerLink="/services-details" class="link-btn">Read More <i class="ph-caret-right"></i></a>
-                        </div>
-                    </div>
-                </ng-template>
+            
             </owl-carousel-o>
         </div>
     </div>

@@ -23,6 +23,7 @@
     "ngx-owl-carousel-o": "^16.0.0",
     "ngx-scrolltop": "^6.0.0",
     "rxjs": "~7.5.0",
+    "sweetalert2": "^11.10.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },

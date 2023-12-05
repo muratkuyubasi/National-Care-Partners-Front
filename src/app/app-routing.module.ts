@@ -33,7 +33,7 @@ import { TermsConditionsPageComponent } from './components/pages/terms-condition
 import { ThankYouPageComponent } from './components/pages/thank-you-page/thank-you-page.component';
 
 const routes: Routes = [
-    {path: '', component: HomeDemoOneComponent},
+    {path: '', component: HomeDemoThreeComponent},
     {path: 'index-2', component: HomeDemoTwoComponent},
     {path: 'index-3', component: HomeDemoThreeComponent},
     {path: 'about', component: AboutPageComponent},
