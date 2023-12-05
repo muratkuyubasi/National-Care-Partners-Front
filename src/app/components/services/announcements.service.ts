@@ -23,4 +23,7 @@ export class AnnouncementsService {
         getOurServicesList():any {
             return this.httpClient.get<any>(this.path+"/AnnouncementAPI/GetList?typeId=5&languageId=1");
         }
+        getid(id: string): Observable<any> {
+            return this.httpClient.get<any>(this.path + "/AnnouncementAPI/GetById?id="+id)
+        }
     }

@@ -18,7 +18,7 @@ export class BlogGridPageComponent implements OnInit {
   }
 
   newsList(){
-    this.announcementsservice.getNewsList().subscribe((data: any)=> {
+    this.announcementsservice.getOurServicesList().subscribe((data: any)=> {
       this.newsModel = data;
       console.log("Haberler",this.newsModel)
     })

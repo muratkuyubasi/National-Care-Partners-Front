@@ -30,7 +30,7 @@
             <div class="col-xl-4 col-lg-6 col-md-6" *ngFor="let item of newsModel">
                 <div class="single-blog-post">
                     <a routerLink="/blog-details" class="image d-block">
-                        <img src="{{path}}/Announcements/{{item.image}}" alt="blog-image">
+                        <img src="{{path}}/WebImages/Announcements/{{item.image}}" alt="blog-image">
                     </a>
                     <div class="content">
                         <ul class="meta">
@@ -43,7 +43,7 @@
                                 {{item.creationDate | date:'dd/MM/yyyy' :'TR'}}
                             </li>
                         </ul>
-                        <h3><a routerLink="/blog-details">{{item.title}}</a></h3>
+                        <h3><a routerLink="/blog-details/{{item.id}}">{{item.title}}</a></h3>
                     </div>
                 </div>
             </div>
